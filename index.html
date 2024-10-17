@@ -1,45 +1,114 @@
-<!DOCTYPE html> //ประกาศประเภทเอกสาร ว่าเป็น HTML5
-<html>
-<head> //ส่วนหัวของเอกสาร ซึ่งรวมข้อมูลที่ไม่แสดงบนหน้าเว็บ เช่น ชื่อเรื่อง, การเชื่อมโยง CSS, และการตั้งค่าเมตา
-    <title>ชื่อเว็บไซต์</title>//ชื่อที่แสดงบนแท็บของเบราว์เซอร์
+<!DOCTYPE html>
+<html lang="th">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <title>Shadow Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
 </head>
-<body>//ส่วนเนื้อหาหลักของเว็บ ที่แสดงผลให้ผู้ใช้เห็น
-    <header>//ส่วนหัวของหน้าเว็บ รวมถึงชื่อร้านและเมนูนำทาง
-        <h1>ชื่อร้านค้า</h1>
-        <nav>//เมนูนำทาง ที่เชื่อมโยงไปยังส่วนต่าง ๆ ของหน้าเว็บ
-            <ul>
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#products">สินค้า</a></li>
-                <li><a href="#contact">ติดต่อเรา</a></li>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shadow Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html">หน้าแรก</a>
+                </li>
+                    <a class="nav-link" href="สินค้า.html">สินค้า</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="เกี่ยวกับ.html">เกี่ยวกับ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="บริการ.html">การบริการ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ติดต่อเรา.html">ติดต่อเรา</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    
-    <main>//เนื้อหาหลักของเว็บไซต์
-        <section id="products">//ส่วนที่ใช้แบ่งกลุ่มเนื้อหาที่มีความสัมพันธ์กัน
-            <h2>สินค้า</h2>
-            <article>//ส่วนที่ใช้แสดงข้อมูลเกี่ยวกับสินค้าแต่ละชิ้น
-                <h3>ชื่อสินค้า 1</h3>
-                <p>รายละเอียดสินค้า 1</p>
-                <p>ราคา: 100 บาท</p>
-                <button>สั่งซื้อ</button>
-            </article>
-            <article>
-                <h3>ชื่อสินค้า 2</h3>
-                <p>รายละเอียดสินค้า 2</p>
-                <p>ราคา: 200 บาท</p>
-                <button>สั่งซื้อ</button>
-            </article>
-            <!-- สามารถเพิ่มสินค้าอื่น ๆ ได้ที่นี่ -->
-        </section>
-    </main>
-    
-    <footer>//ส่วนท้ายของเว็บ แสดงข้อมูลลิขสิทธิ์และข้อมูลติดต่อ
-        <p>© 2024 ชื่อร้านค้า. สงวนลิขสิทธิ์.</p>
-        <p><a href="#contact">ติดต่อเรา</a></p>
-    </footer>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shadow Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html">หน้าแรก</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="สินค้า.html">สินค้า</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="เกี่ยวกับ.html">เกี่ยวกับ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="บริการ.html">การบริการ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ติดต่อเรา.html">ติดต่อเรา</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Carousel -->
+<div id="bannerCarousel" class="carousel slide mt-3" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://img.pikbest.com/wp/202347/mobile-phone-banner-background-3d-illustration-of-a-pink-wall-shelf-with-perfect-for-horizontal_9765375.jpg!w700wp" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>โทรศัพท์ในเครื่องอิเล็กทรอนิกส์</h5>
+                <p>แบนเนอร์โทรศัพท์ช่วยเน้นย้ำจุดเด่นของฟีเจอร์ที่น่าสนใจ เช่น กล้องความละเอียดสูง หรือแบตเตอรี่ที่ใช้งานได้ยาวนาน เพื่อดึงดูดผู้ซื้อ</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://img.pikbest.com/wp/202405/computer-phone-tablet-banner-of-purple-wall-shelf-featuring-laptop-mobile-and-digital-pc-3d-illustration_9858608.jpg!w700wp" class="d-block w-100" alt="Banner 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>โทรศัพท์ในเครื่องอิเล็กทรอนิกส์</h5>
+                <p>ด้วยการออกแบบที่เรียบง่ายและภาพชัดเจน แบนเนอร์สามารถสื่อสารข้อมูลสำคัญ เช่น ราคาและโปรโมชั่นพิเศษ ได้อย่างรวดเร็ว</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://img.pikbest.com/ai/illus_our/20230530/85c1ac0e0a22420b4cc4dfee6ddda7ec.jpg!w700wp" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>โทรศัพท์</h5>
+                <p>แบนเนอร์โทรศัพท์คอมพิวเตอร์แท็บเล็ตของชั้นวางติดผนังสีม่วงมีภาพประกอบ 3 มิติมือถือแล็ปท็อปและพีซีดิจิทัล JPG ที่น่าสนใจ 3</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="img" style="padding-left:200px;">
+    <a href="https://mail.google.com/mail/u/0/#inbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/640px-Gmail_icon_%282020%29.svg.png"  width="300px" height="300px">
+    </a>
+    <a href="https://th-th.facebook.com/">
+        <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"   width="300px" height="300px">
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p><p>@ 2024 Shadow Shop . สงวนสิทธิ์.</p>
+</footer>
 </body>
 </html>
