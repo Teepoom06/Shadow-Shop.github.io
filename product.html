@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <title>Shadow Shop</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -20,7 +20,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">หน้าแรก</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="product.html">สินค้า</a>
                     </li>
                     <li class="nav-item">
@@ -32,92 +32,100 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Contact.html">ติดต่อเรา</a>
                     </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">ค้นหา</button>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <main>
         <section id="products">
-        <h2>สินค้า</h2>
+            <h2>สินค้า</h2>
             <article>
                 <img src="https://media-cdn.bnn.in.th/430203/Xiaomi-Smartphone-14T-Titan-Black-1-square_medium.jpg" width="500" height="600">
                 <h3>Xiaomi 14T</h3>
-                <p>สมาร์ทโฟนแห่งการถ่ายรูปที่คุณต้องหลงไหล  ดีไซน์โดดเด่น เเละหน้าจอแสดงผลแบบเต็มหน้าจอ การรับชมภาพที่น่าทึ่งยิ่งขึ้นทันทีเมื่อชมภาพยนตร์และเล่นเกม  ด้วยแบตเตอรี่ ใหญ่จุใจ ใช้ได้ยาวนาน  เหมาะกับการใช้งานได้ตลอดทั้งวัน</p>
+                <p>สมาร์ทโฟนแห่งการถ่ายรูปที่คุณต้องหลงไหล ดีไซน์โดดเด่น เเละหน้าจอแสดงผลแบบเต็มหน้าจอ...</p>
                 <p>ราคา: 20000 บาท</p>
-                <button>สั่งซื้อ</button>
+                <button data-toggle="modal" data-target="#orderModal">สั่งซื้อ</button>
             </article>
             <article>
                 <img src="https://media-cdn.bnn.in.th/431368/Infinix-Smartphone-Hot50i-Sleek-Black---1-square_medium.jpg" width="500" height="600">
                 <h3>Infinix Hot 50i</h3>
-                <p> สมาร์ทโฟนดีไซน์สวยจอใหญ่ อัพเกรดความมันส์ด้วยสเปคสุดคุ้ม เพลิดเพลินไปกับการสัมผัสและประสบการณ์การรับชมที่ลื่นไหลเป็นพิเศษ  เเละมาพร้อมกับแบตเตอรรี่ใหญ่จุใจ  ใช้งานได้ยาวนานต่อเนื่องได้ตลอดทั้งวัน</p>
+                <p>สมาร์ทโฟนดีไซน์สวยจอใหญ่ อัพเกรดความมันส์ด้วยสเปคสุดคุ้ม...</p>
                 <p>ราคา: 6000 บาท</p>
-                <button>สั่งซื้อ</button>
+                <button data-toggle="modal" data-target="#orderModal">สั่งซื้อ</button>
             </article>
-            <article>//ส่วนที่ใช้แสดงกับสินค้าแต่ละชิ้น
+            <article>
                 <img src="https://media-cdn.bnn.in.th/409728/OPPO-Smartphone-Reno12F-Amber-Orange-5G----1-square_medium.jpg" width="500" height="600">
-                <h3>OPPO Reno12F รองรับ 5G </h3>
-                <p> สมาร์ทโฟนคุณภาพดี   อีกขั้นของความสนุก Al Portrait และยังมี AI Eraser 2.0 ใช้สะดวกและลบคนที่ไม่ต้องการในรูปภาพได้อย่างง่ายดายและแม่นยำยิ่งขึ้น มาพร้อมแบตเตอรี่ขนาดใหญ่ใช้งานได้ยาวนานมีประสิทธิภาพ เหมาะกับทุกไลฟ์สไตล์การใช้งาน</p>
+                <h3>OPPO Reno12F รองรับ 5G</h3>
+                <p>สมาร์ทโฟนคุณภาพดี อีกขั้นของความสนุก...</p>
                 <p>ราคา: 13000 บาท</p>
-                <button>สั่งซื้อ</button>
+                <button data-toggle="modal" data-target="#orderModal">สั่งซื้อ</button>
             </article>
             <article>
                 <img src="https://media-cdn.bnn.in.th/412886/OPPO-A3-Pro--Moonlight-Purple-5G--1-square_medium.jpg" width="500" height="600">
                 <h3>OPPO A3 Pro (5G)</h3>
-                <p> อีกขั้นของความสนุก จอแสดงผลที่สว่างเป็นพิเศษ มาพร้อมแบตเตอรี่ขนาดใหญ่ใช้งานได้ยาวนานมีประสิทธิภาพและดีไซน์หรูหรา บางเบา   พกพาไปไหนก็สะดวก เหมาะกับทุกไลฟ์สไตล์การใช้งาน</p>
+                <p>อีกขั้นของความสนุก จอแสดงผลที่สว่างเป็นพิเศษ...</p>
                 <p>ราคา: 8000 บาท</p>
-                <button>สั่งซื้อ</button>
+                <button data-toggle="modal" data-target="#orderModal">สั่งซื้อ</button>
             </article>
         </section>
     </main>
-    <!-- Order Button -->
-<div class="container text-center mt-4">
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderModal">สั่งซื้อสินค้า</button>
-</div>
 
-<!-- Order Modal -->
-<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="orderModalLabel">ยืนยันการสั่งซื้อ</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>คุณต้องการสั่งซื้อสินค้านี้หรือไม่?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
-                <button type="button" class="btn btn-primary" id="confirmOrder">ยืนยันการสั่งซื้อ</button>
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">ยืนยันการสั่งซื้อ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>คุณต้องการสั่งซื้อสินค้านี้หรือไม่?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary" id="confirmOrder">ยืนยันการสั่งซื้อ</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Success Message Modal -->
-<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="successModalLabel">การสั่งซื้อสำเร็จ</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>คุณได้ทำการสั่งซื้อสำเร็จแล้ว!</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">ตกลง</button>
+    <!-- Success Message Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">การสั่งซื้อสำเร็จ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>คุณได้ทำการสั่งซื้อสำเร็จแล้ว!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">ตกลง</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('confirmOrder').addEventListener('click', function() {
+            $('#orderModal').modal('hide');
+            $('#successModal').modal('show');
+        });
+    </script>
 </body>
 </html>
