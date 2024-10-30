@@ -10,7 +10,7 @@ body {
 
 /* สีของ Navbar links */
 .navbar-nav .nav-link {
-    color: black; /* สีพื้นฐาน */
+    color: #000; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
     transition: color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
 }
 
@@ -21,7 +21,7 @@ body {
 /* ปุ่มค้นหา */
 .btn-outline-success {
     border-color: #007bff; /* สีกรอบปุ่ม */
-    color: #007bff; /* สีข้อความ */
+    color: #000; /* เปลี่ยนสีข้อความเป็นสีดำ */
 }
 
 .btn-outline-success:hover {
