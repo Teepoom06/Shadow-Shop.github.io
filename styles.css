@@ -99,10 +99,4 @@ h1 {
     transform: scale(1.05);
 }
 
-/* สไตล์ของ Footer */
-footer {
-    background-color: #007bff; /* สีพื้นหลังของ Footer */
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-}
+
