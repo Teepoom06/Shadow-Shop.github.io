@@ -10,7 +10,7 @@ body {
 
 /* สีของ Navbar links */
 .navbar-nav .nav-link {
-    color: #007bff; /* สีพื้นฐาน */
+    color: black; /* สีพื้นฐาน */
     transition: color 0.3s; /* เอฟเฟกต์เปลี่ยนสี */
 }
 
