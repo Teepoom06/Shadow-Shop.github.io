@@ -89,6 +89,13 @@ h1 {
     transform: translateY(-2px);
 }
 
+/* ปุ่มจัดเรียงให้อยู่บรรทัดเดียวกัน */
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
 /* ตั้งค่าภาพสินค้า */
 .img-fluid {
     border-radius: 15px;
