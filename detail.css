@@ -71,21 +71,3 @@ h1 {
     transform: scale(1.05);
 }
 
-/* สไตล์ footer */
-#footer-placeholder {
-    background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-}
-
-#footer-placeholder a {
-    color: #ecf0f1;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#footer-placeholder a:hover {
-    color: #f1c40f;
-}
