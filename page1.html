@@ -25,13 +25,19 @@
                 <button class="btn btn-success mt-2" onclick="orderProduct()">สั่งซื้อ</button>
                 <button onclick="history.back()" class="btn btn-secondary mb-3">ย้อนกลับ</button>
             </div>
-                <!-- การแจ้งเตือน -->
-                <div id="notification" class="notification">
-                    <p>สั่งซื้อสินค้าสำเร็จ! เราจะติดต่อคุณในไม่ช้า</p>
-                </div>
+        </div>
+    </div>
+
+    <!-- การแจ้งเตือน -->
+    <div id="notification" class="notification">
+        <p>สั่งซื้อสินค้าสำเร็จ! เราจะติดต่อคุณในไม่ช้า</p>
+    </div>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
 
     <script>
-        
         function orderProduct() {
             const notification = document.getElementById('notification');
             notification.classList.add('show');
@@ -40,12 +46,14 @@
             setTimeout(() => {
                 notification.classList.remove('show');
             }, 3000);
+        }
 
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
             });
+
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {
