@@ -1,0 +1,91 @@
+/* ตั้งค่าสไตล์พื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ตั้งค่าสไตล์ให้ container */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ตั้งค่าหัวข้อ */
+h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* ตั้งค่าราคาสินค้า */
+.text-muted {
+    color: #16a085 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ปุ่ม */
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ปุ่มย้อนกลับ */
+.btn-secondary {
+    background-color: #bdc3c7;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+/* ปุ่มสั่งซื้อ */
+.btn-success {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* ตั้งค่าภาพสินค้า */
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* สไตล์ footer */
+#footer-placeholder {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+#footer-placeholder a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer-placeholder a:hover {
+    color: #f1c40f;
+}
