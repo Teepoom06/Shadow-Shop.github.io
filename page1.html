@@ -22,8 +22,12 @@
                 <h1>Apple iPad Air 11-inch (M2) Wi-Fi 256GB Blue</h1>
                 <p class="text-muted">ราคา: <strong>25,490 บาท</strong></p>
                 <p>หน้าจอ 11 นิ้ว, ความจุ 256GB, ระบบปฏิบัติการ iOS, สีฟ้า</p>
-                <button class="btn btn-success mt-2" onclick="orderProduct()">สั่งซื้อ</button>
-                <button onclick="history.back()" class="btn btn-secondary mb-3">ย้อนกลับ</button>
+                
+                <!-- ปุ่มให้อยู่บรรทัดเดียวกัน -->
+                <div class="button-container">
+                    <button class="btn btn-success" onclick="orderProduct()">สั่งซื้อ</button>
+                    <button onclick="history.back()" class="btn btn-secondary">ย้อนกลับ</button>
+                </div>
             </div>
         </div>
     </div>
@@ -41,7 +45,7 @@
         function orderProduct() {
             const notification = document.getElementById('notification');
             notification.classList.add('show');
-    
+
             // ซ่อนการแจ้งเตือนหลังจาก 3 วินาที
             setTimeout(() => {
                 notification.classList.remove('show');
